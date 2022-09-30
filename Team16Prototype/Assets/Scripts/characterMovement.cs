@@ -46,6 +46,8 @@ public class characterMovement : MonoBehaviour
 
         }
 
+
+
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
