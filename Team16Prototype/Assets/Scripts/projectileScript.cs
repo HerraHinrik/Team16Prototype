@@ -32,7 +32,7 @@ public class projectileScript : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
 
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }
