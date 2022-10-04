@@ -35,7 +35,7 @@ public class CoreHeatingSystem : MonoBehaviour
         }
         else
         {
-            Debug.Log("zero");
+            //Debug.Log("zero");
         }
        
    

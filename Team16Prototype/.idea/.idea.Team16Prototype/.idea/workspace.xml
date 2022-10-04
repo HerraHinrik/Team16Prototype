@@ -93,14 +93,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs</url>
           <line>41</line>
-          <properties documentPath="C:\Users\hinrik.gylfason\OneDrive - Change Maker Education\Documents\GitHub\Team16Prototype\Team16Prototype\Assets\Scripts\CoreHeatingSystem.cs" initialLine="37" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="1106" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1149" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\hinrik.gylfason\OneDrive - Change Maker Education\Documents\GitHub\Team16Prototype\Team16Prototype\Assets\Scripts\CoreHeatingSystem.cs" initialLine="37" containingFunctionPresentation="method 'Update'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
