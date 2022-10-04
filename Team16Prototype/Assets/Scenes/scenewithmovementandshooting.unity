@@ -911,11 +911,11 @@ PrefabInstance:
     - target: {fileID: 5610827068714188069, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b57a7da994ad2dd4a8d6cd38f3959d42, type: 2}
+      objectReference: {fileID: 2100000, guid: e5379c58bf2bacd429a6b7ce417fe5e1, type: 2}
     - target: {fileID: 5610827068714188069, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: b57a7da994ad2dd4a8d6cd38f3959d42, type: 2}
+      objectReference: {fileID: 2100000, guid: e5379c58bf2bacd429a6b7ce417fe5e1, type: 2}
     - target: {fileID: 5684698130881372738, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: m_RootOrder
       value: 3

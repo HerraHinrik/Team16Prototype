@@ -32,22 +32,20 @@ public class playerShooting : MonoBehaviour
     {
         if (Input.GetButton("Fire1") && canShoot)
         {
-            ActivateLasers();
+            SetLasersActive(true);
         }
         else
         {
-            DeactivateLasers();
+            SetLasersActive(false);
         }
     }
     
-    void ActivateLasers()
+    void SetLasersActive(bool isActive)
     {
         //activate laser
-        laser.SetActive(true);
-    }
-    
-    void DeactivateLasers()
-    {
-        laser.SetActive(false);
+        //laser.SetActive(true);
+
+        var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+        emissionModule.enabled = isActive;
     }
 }
