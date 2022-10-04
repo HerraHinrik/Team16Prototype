@@ -10,15 +10,14 @@ public class CoreHeatingSystem : MonoBehaviour
     [SerializeField] private float maxCoreHealth;
     [SerializeField] private float currentCoreHealth;
     [SerializeField] private Image coreSlider;
-
     private void Start()
     {
-        currentCoreHealth = 0f;
+        currentCoreHealth = 0.75f;
         playerMovement = false;
+        Mathf.Clamp(currentCoreHealth, min: 0.75f, max: 10f);
     }
     private void Update()
     {
-
         if (playerMovement == true)
         {
             currentCoreHealth += Time.deltaTime;
@@ -27,11 +26,37 @@ public class CoreHeatingSystem : MonoBehaviour
                     {
                         Debug.Log("die");
                         Destroy(gameObject);
-                        
                     }
         }
+        else if (currentCoreHealth >= 1.75f)
+        {
+            currentCoreHealth -= Time.deltaTime;
+            SetSlider();
+        }
+        else
+        {
+            Debug.Log("zero");
+        }
+       
+   
+        if (Input.GetAxisRaw("Horizontal") >= 0.1f)
+        {
+            playerMovement = true;
+        }
+        else
+        {
+            playerMovement = false;
+        }
+        if (Input.GetAxisRaw("Horizontal") <= -0.1f)
+        {
+            playerMovement = true;
+        }
 
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetAxisRaw("Vertical") >= 0.1f)
+        {
+            playerMovement = true;
+        }
+        if (Input.GetAxisRaw("Vertical") <= -0.1f)
         {
             playerMovement = true;
         }
