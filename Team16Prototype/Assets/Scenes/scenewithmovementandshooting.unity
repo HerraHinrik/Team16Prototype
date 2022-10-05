@@ -272,9 +272,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329086829}
   m_CullTransparentMesh: 1
---- !u!1 &444894908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5196295340258887816, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+--- !u!198 &444894911 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
   m_PrefabInstance: {fileID: 1502910006}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &665414148 stripped
@@ -294,11 +294,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa38d8faa5bd8d49986a5463699ec03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 6086325561912598503, guid: 87c2a2ac1548cdd4a8d9c4ed1e496d09, type: 3}
-  laser: {fileID: 444894908}
-  canShoot: 1
+  range: 19
   shootingPosition: {fileID: 721799084}
-  player: {fileID: 665414148}
+  damage: 10
+  laserFlash: {fileID: 444894911}
 --- !u!114 &665414150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,6 +1149,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5610827068714188069, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+      propertyPath: m_MaxParticleSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610827068714188069, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+      propertyPath: m_MinParticleSize
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610827068714188069, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1167,7 +1174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: lengthInSec
@@ -1175,7 +1182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: simulationSpeed
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: moveWithTransform
@@ -1187,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: TrailModule.lifetime.scalar
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: TrailModule.dieWithParticles
@@ -1206,12 +1213,20 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+      propertyPath: TrailModule.generateLightingData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+      propertyPath: TrailModule.widthOverTrail.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7549252096276319299, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -1267,6 +1282,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1972052027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972052020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a52b15c9b44f93741ac5e09a6baeaf47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1001 &2330960938983806003
 PrefabInstance:
   m_ObjectHideFlags: 0
