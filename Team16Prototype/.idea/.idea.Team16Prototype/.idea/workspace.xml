@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TurretMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerShooting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.analytics@4.1.0/Runtime/AnalyticsServiceInstance.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -76,7 +77,7 @@
       <updated>1664867261460</updated>
       <workItem from="1664867295283" duration="1411000" />
       <workItem from="1664872736860" duration="3400000" />
-      <workItem from="1664893377714" duration="3170000" />
+      <workItem from="1664893377714" duration="10020000" />
     </task>
     <servers />
   </component>

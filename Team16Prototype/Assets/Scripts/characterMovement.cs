@@ -32,7 +32,6 @@ public class characterMovement : MonoBehaviour
             float vertical = Input.GetAxisRaw("Vertical");
             direction = new Vector3(horizontal, 0f, vertical).normalized;
         }
-
         //smooths out turning
         if (direction.magnitude >= 0.1f && canMove)
         {
