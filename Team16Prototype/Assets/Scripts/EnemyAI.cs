@@ -31,6 +31,10 @@ public class EnemyAI : MonoBehaviour
         {
             isProvoked = true;
         }
+        else
+        {
+            return;
+        }
     }
 
     void EngageTarget()
