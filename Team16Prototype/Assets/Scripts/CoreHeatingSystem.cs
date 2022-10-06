@@ -42,7 +42,7 @@ public class CoreHeatingSystem : MonoBehaviour
                         Destroy(gameObject);
                     }
         }
-        else if (currentCoreHealth >= 1.75f)
+        else if (currentCoreHealth >= 0.5f)
         {
             currentCoreHealth -= Time.deltaTime;
             SetSlider();

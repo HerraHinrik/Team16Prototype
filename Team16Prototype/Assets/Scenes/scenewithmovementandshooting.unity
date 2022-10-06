@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 35dfbd8b9b69a0b439633d22a15104c7, type: 2}
+--- !u!198 &14090673 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+  m_PrefabInstance: {fileID: 3445096207495173795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329086829
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +191,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.05
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -251,15 +256,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -822,7 +827,7 @@ MonoBehaviour:
   lineRange: 100
   shootingPosition: {fileID: 1397431674}
   damage: 10
-  laserFlash: {fileID: 1603796543}
+  laserFlash: {fileID: 14090673}
   hitEffect: {fileID: 1046453136841042161, guid: 48d0d39a01d7ea942a85cc9fe7134de8, type: 3}
   lineRenderer: {fileID: 1397431675}
   shootingRotation: {fileID: 0}
@@ -1201,11 +1206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!198 &1603796543 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6765361438202931821, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
-  m_PrefabInstance: {fileID: 3445096207495173795}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1972052020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8156485986664492227, guid: 02002dcc11e49c148b89fa5614a79247, type: 3}
