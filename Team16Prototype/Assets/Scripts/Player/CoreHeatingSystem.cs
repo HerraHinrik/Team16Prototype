@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CoreHeatingSystem : MonoBehaviour
@@ -40,6 +41,7 @@ public class CoreHeatingSystem : MonoBehaviour
                     {
                         Debug.Log("die");
                         Destroy(gameObject);
+                        LoadDeath();
                     }
         }
         else if (currentCoreHealth >= 0.5f)
@@ -80,5 +82,10 @@ public class CoreHeatingSystem : MonoBehaviour
     public void SetSlider()
     {
         coreSlider.fillAmount = currentCoreHealth / maxCoreHealth;
+    }
+
+    void LoadDeath()
+    {
+        SceneManager.LoadScene(2);
     }
 }
