@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="569dfcea-99e1-4f83-be08-a1395f9f602b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Team16Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team16Prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scenewithmovementandshooting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/scenewithmovementandshooting.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="569dfcea-99e1-4f83-be08-a1395f9f602b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +79,7 @@
       <workItem from="1664872736860" duration="3400000" />
       <workItem from="1664893377714" duration="10020000" />
       <workItem from="1665058977367" duration="255000" />
-      <workItem from="1665059275323" duration="5105000" />
+      <workItem from="1665059275323" duration="5146000" />
     </task>
     <servers />
   </component>
