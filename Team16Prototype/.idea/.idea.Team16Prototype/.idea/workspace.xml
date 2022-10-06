@@ -76,7 +76,7 @@
       <updated>1664867261460</updated>
       <workItem from="1664867295283" duration="1411000" />
       <workItem from="1664872736860" duration="3400000" />
-      <workItem from="1664893377714" duration="847000" />
+      <workItem from="1664893377714" duration="3170000" />
     </task>
     <servers />
   </component>
@@ -87,17 +87,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Users\hinrik.gylfason\OneDrive - Change Maker Education\Documents\GitHub\Team16Prototype\Team16Prototype\Assets\Scripts\CoreHeatingSystem.cs" initialLine="37" containingFunctionPresentation="method 'Update'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

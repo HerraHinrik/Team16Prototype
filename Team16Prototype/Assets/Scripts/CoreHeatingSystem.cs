@@ -10,11 +10,19 @@ public class CoreHeatingSystem : MonoBehaviour
     [SerializeField] private float maxCoreHealth;
     [SerializeField] private float currentCoreHealth;
     [SerializeField] private Image coreSlider;
+    
+    private Renderer _renderUI;
+    private Renderer _renderPlayerCore;
+    public GameObject objUI;
+    public GameObject objCore;
     private void Start()
     {
         currentCoreHealth = 0.75f;
         playerMovement = false;
         Mathf.Clamp(currentCoreHealth, min: 0.75f, max: 10f);
+
+        _renderPlayerCore = objCore.GetComponent<Renderer>();
+        _renderUI = objUI.GetComponent<Renderer>();
     }
     private void Update()
     {
@@ -60,6 +68,7 @@ public class CoreHeatingSystem : MonoBehaviour
         {
             playerMovement = true;
         }
+        _renderPlayerCore.material.SetFloat("_CoreStatus", currentCoreHealth/maxCoreHealth);
     }
 
     public void SetSlider()
