@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class playerShooting : MonoBehaviour
@@ -11,6 +12,7 @@ public class playerShooting : MonoBehaviour
     [SerializeField] private ParticleSystem laserFlash;
     [SerializeField] private GameObject hitEffect;
     [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Transform shootingRotation;
 
     // Update is called once per frame
     void Update()
