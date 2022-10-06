@@ -24,6 +24,12 @@ public class CoreHeatingSystem : MonoBehaviour
         _renderPlayerCore = objCore.GetComponent<Renderer>();
         _renderUI = objUI.GetComponent<Renderer>();
     }
+
+    public void TakeDamage(float damage)
+    {
+        currentCoreHealth += damage;
+        Debug.Log("biib");
+    }
     private void Update()
     {
         if (playerMovement == true)

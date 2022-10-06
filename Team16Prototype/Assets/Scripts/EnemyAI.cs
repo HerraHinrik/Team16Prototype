@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private float distanceToTarget = Mathf.Infinity;
     private bool isProvoked = false;
+    private float damage = 2f;
     
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,7 @@ public class EnemyAI : MonoBehaviour
     
     void AttackTarget()
     {
-        Debug.Log(name + "repairing the core");
+      
     }
 
     private void OnDrawGizmosSelected()
@@ -68,6 +69,15 @@ public class EnemyAI : MonoBehaviour
         if (other.CompareTag("Laser"))
         {
             GameObject.Find("Laser").SetActive(false);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            collision.collider.gameObject.GetComponent<CoreHeatingSystem>().TakeDamage(damage);
+            Debug.Log("Damage");
+            Destroy(gameObject);
         }
     }
 }
