@@ -196,6 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b23ba95c583c345b5c16de7d619558, type: 3}
+--- !u!1 &99167011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 63937481405989509, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+  m_PrefabInstance: {fileID: 3445096207495173795}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329086829
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +917,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404142412}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 21.6, z: -1}
+  m_LocalPosition: {x: 0, y: 30.811, z: -1}
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1049,7 +1054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441419661}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 21.6, z: -1}
+  m_LocalPosition: {x: 0, y: 30.811, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1143,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 20.789, z: -0.258}
+  m_FollowOffset: {x: 0, y: 30, z: -0.258}
   m_XDamping: 2
   m_YDamping: 2
   m_ZDamping: 2
@@ -1253,10 +1258,54 @@ PrefabInstance:
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 1046453136841042161, guid: 48d0d39a01d7ea942a85cc9fe7134de8, type: 3}
+    - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: lineRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: lineRenderer
+      value: 
+      objectReference: {fileID: 5384878987842312199}
     - target: {fileID: 3445096207068888233, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: coreSlider
       value: 
       objectReference: {fileID: 329086831}
+    - target: {fileID: 3445096207143031055, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: stopAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: TriggerModule.enter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: TriggerModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: CollisionModule.collisionMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7310923670028144290, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1308,3 +1357,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7310923670028144290, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
   m_PrefabInstance: {fileID: 3445096207495173795}
   m_PrefabAsset: {fileID: 0}
+--- !u!120 &5384878987842312199
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99167011}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: fe32b96698f8fbf4d844a28aacdfe238, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0625
+        value: 0.10869606
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0

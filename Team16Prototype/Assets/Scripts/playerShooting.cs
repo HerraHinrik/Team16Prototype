@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class playerShooting : MonoBehaviour
 {
-    // public GameObject projectilePrefab;
     [SerializeField] private float range = 100f;
-    // public bool canShoot = true;
+    [SerializeField] private float lineRange = 100f;
     [SerializeField] public Transform shootingPosition;
-    // public GameObject player;
     [SerializeField] private float damage = 20f;
     [SerializeField] private ParticleSystem laserFlash;
     [SerializeField] private GameObject hitEffect;
+    [SerializeField] private LineRenderer lineRenderer;
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetButton("Fire1") && canShoot)
+        Vector3 start = transform.position;
+        Vector3 end = transform.position + transform.forward * lineRange;
+        lineRenderer.SetPosition(0, start);
+        lineRenderer.SetPosition(1, end);
+        if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(projectilePrefab, shootingPosition.position, player.transform.rotation);
-            
-        }*/
-         if (Input.GetButtonDown("Fire1"))
-         {
-             Shoot();
-         }
+            Shoot();
+        }
     }
     
     // ReSharper disable Unity.PerformanceAnalysis
@@ -42,6 +40,7 @@ public class playerShooting : MonoBehaviour
     void ProcessRaycast()
     {
         RaycastHit hit;
+
         if (Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name + " was hit");
