@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theEnemy: {fileID: 1972052020}
+  spawnTime: 3
   xPos: 0
   zPos: 0
   enemyCount: 0
@@ -1251,6 +1252,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: damage
       value: 15
       objectReference: {fileID: 0}
@@ -1260,7 +1265,7 @@ PrefabInstance:
       objectReference: {fileID: 1046453136841042161, guid: 48d0d39a01d7ea942a85cc9fe7134de8, type: 3}
     - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: lineRange
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: lineRenderer
