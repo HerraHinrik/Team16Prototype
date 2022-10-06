@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class playerShooting : MonoBehaviour
 {
-    public GameObject projectilePrefab;
-    [SerializeField] private GameObject laser;
-    public bool canShoot = true;
-    public Transform shootingPosition;
-    public GameObject player;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // public GameObject projectilePrefab;
+    [SerializeField] private float range = 100f;
+    // public bool canShoot = true;
+    [SerializeField] public Transform shootingPosition;
+    // public GameObject player;
+    [SerializeField] private float damage = 20f;
+    [SerializeField] private ParticleSystem laserFlash;
+    [SerializeField] private GameObject hitEffect;
 
     // Update is called once per frame
     void Update()
@@ -25,27 +21,44 @@ public class playerShooting : MonoBehaviour
             Instantiate(projectilePrefab, shootingPosition.position, player.transform.rotation);
             
         }*/
-        ProcessFiring();
+         if (Input.GetButtonDown("Fire1"))
+         {
+             Shoot();
+         }
+    }
+    
+    // ReSharper disable Unity.PerformanceAnalysis
+    void Shoot()
+    {
+        PlayLaserFlash();
+        ProcessRaycast();
     }
 
-    void ProcessFiring()
+    void PlayLaserFlash()
     {
-        if (Input.GetButton("Fire1") && canShoot)
+        laserFlash.Play();
+    }
+
+    void ProcessRaycast()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit, range))
         {
-            SetLasersActive(true);
+            Debug.Log(hit.transform.name + " was hit");
+            CreateHitImpact(hit);
+            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            if (target == null) return;
+            target.TakeDamage(damage);
         }
         else
         {
-            SetLasersActive(false);
+            return; 
         }
     }
-    
-    void SetLasersActive(bool isActive)
-    {
-        //activate laser
-        //laser.SetActive(true);
 
-        var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-        emissionModule.enabled = isActive;
+    private void CreateHitImpact(RaycastHit hit)
+    {
+        GameObject impact = Instantiate(hitEffect, hit.point, Quaternion.identity);
+        Destroy(impact, 1);
     }
 }
