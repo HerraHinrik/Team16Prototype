@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
-        
+        if (target == null) return;
         if (isProvoked)
         {
             EngageTarget();
@@ -61,5 +61,13 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Laser"))
+        {
+            GameObject.Find("Laser").SetActive(false);
+        }
     }
 }
