@@ -34,7 +34,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9195750391323600921}
-  - {fileID: 3445096207143031055}
   - {fileID: 3445096207151901058}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,8 +49,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.07
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.3
+  m_Center: {x: 0, y: -0.5, z: 0.5}
 --- !u!143 &3445096207068888234
 CharacterController:
   m_ObjectHideFlags: 0
@@ -65,7 +64,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
+  m_SlopeLimit: 0
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
@@ -83,10 +82,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 19
+  lineRange: 100
   shootingPosition: {fileID: 3445096207143031055}
   damage: 10
   laserFlash: {fileID: 5119225497224694998}
   hitEffect: {fileID: 6874538022339746212, guid: 19b2d31bfa011164f85e3579332b9880, type: 3}
+  lineRenderer: {fileID: 0}
 --- !u!114 &3445096207068888229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,13 +146,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3445096207143031048}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.116, y: 0.186, z: 1.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071069, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0.00116, y: -0.016399998, z: 0.0018599975}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7001807057294582487}
-  m_Father: {fileID: 7310923670028144290}
+  m_Father: {fileID: 6275615852243124168}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3445096207151901118
@@ -181,12 +182,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3445096207151901118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.811, z: 0.742}
+  m_LocalPosition: {x: 0, y: -1.29, z: 0.742}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7310923670028144290}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3445096207151901059
 MeshFilter:
@@ -472,6 +473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+--- !u!4 &6275615852243124168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7075234130725214694, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
+  m_PrefabInstance: {fileID: 3830083517410862638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9195750391323600921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5384878988522606135, guid: e51ab09316d3dc8488b34d2f80d1be87, type: 3}
