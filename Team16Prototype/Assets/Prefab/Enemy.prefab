@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  deathSound: {fileID: 0}
 --- !u!195 &1972052024
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -101,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  deathSound: {fileID: 0}
 --- !u!65 &3599748932200792249
 BoxCollider:
   m_ObjectHideFlags: 0
