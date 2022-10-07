@@ -13,7 +13,7 @@ public class characterMovement : MonoBehaviour
     public Transform cam;
     private Vector3 direction;
     public CharacterController controller;
-    public float playerSpeed = 11.25f;
+    public float playerSpeed = 14.25f;
 
 
     // Start is called before the first frame update

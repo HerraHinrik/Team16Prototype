@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 4406633271292326424}
   - component: {fileID: 4935928236173647908}
   - component: {fileID: 1972052024}
-  - component: {fileID: 1972052027}
   - component: {fileID: 3599748932200792249}
   - component: {fileID: 3420737860070809256}
-  - component: {fileID: 32295983536471676}
+  - component: {fileID: 6834401157859024384}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -66,7 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
-  deathSound: {fileID: 0}
 --- !u!195 &1972052024
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -89,20 +87,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 0
---- !u!114 &1972052027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8156485986664492227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52b15c9b44f93741ac5e09a6baeaf47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 100
-  deathSound: {fileID: 0}
 --- !u!65 &3599748932200792249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -132,7 +116,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &32295983536471676
+--- !u!114 &6834401157859024384
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,10 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8156485986664492227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42983929beebf2c4d80ebd992d25a69a, type: 3}
+  m_Script: {fileID: 11500000, guid: b4014a467983362419e03257a342fc09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffect: {fileID: 317422395999653990, guid: 34c8cb9ce5f2c064ba9306df468935ef, type: 3}
+  hitEffect: {fileID: 0}
 --- !u!1001 &7024215112614224336
 PrefabInstance:
   m_ObjectHideFlags: 0

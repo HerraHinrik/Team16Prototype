@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theEnemy: {fileID: 1972052020}
-  spawnTime: 3
+  spawnTime: 2.5
   xPos: 0
   zPos: 0
   enemyCount: 0
@@ -971,7 +971,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e2b721c5a96c29342b7c26945116521d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.275
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1640,7 +1640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 281349163144736671, guid: 02002dcc11e49c148b89fa5614a79247, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 281349163144736671, guid: 02002dcc11e49c148b89fa5614a79247, type: 3}
       propertyPath: m_LocalPosition.y
