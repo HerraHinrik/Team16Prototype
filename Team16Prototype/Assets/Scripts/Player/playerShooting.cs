@@ -8,11 +8,12 @@ public class playerShooting : MonoBehaviour
     [SerializeField] private float range = 100f;
     [SerializeField] private float lineRange = 100f;
     [SerializeField] public Transform shootingPosition;
-    [SerializeField] private float damage = 20f;
+    [SerializeField] private float damage = 50f;
     [SerializeField] private ParticleSystem laserFlash;
     [SerializeField] private GameObject hitEffect;
     [SerializeField] private LineRenderer lineRenderer;
     [SerializeField] private Transform shootingRotation;
+    public AudioSource bulletSound;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,8 @@ public class playerShooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            bulletSound.Play();
+            Debug.Log("shoot");
         }
     }
     

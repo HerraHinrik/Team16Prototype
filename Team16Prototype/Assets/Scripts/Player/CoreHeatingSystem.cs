@@ -16,6 +16,8 @@ public class CoreHeatingSystem : MonoBehaviour
     private Renderer _renderPlayerCore;
     public GameObject objUI;
     public GameObject objCore;
+
+    private AudioClip clip;
     private void Start()
     {
         currentCoreHealth = 0.75f;
@@ -45,7 +47,7 @@ public class CoreHeatingSystem : MonoBehaviour
         }
         else if (currentCoreHealth >= 0.5f)
         {
-            currentCoreHealth -= Time.deltaTime;
+            currentCoreHealth -= Time.deltaTime * 2;
             SetSlider();
         }
         else
