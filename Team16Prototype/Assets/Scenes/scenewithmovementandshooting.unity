@@ -695,7 +695,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.1768868, g: 0.7075472, b: 0.57780343, a: 1}
   m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
@@ -1093,14 +1093,14 @@ Camera:
   m_GameObject: {fileID: 1404142412}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.45545566, g: 0.83607835, b: 0.8396226, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
-  m_Dithering: 0
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
@@ -1614,6 +1614,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.362
       objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.003921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119225497224694998, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5190877475333437783, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
       propertyPath: cam
       value: 
@@ -1694,7 +1706,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3445096207068888230, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
+    - {fileID: 1683824272596126187, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dfc590312b45c8498e39ec8fd71c232, type: 3}
 --- !u!4 &5384878987842312193 stripped
 Transform:

@@ -40,8 +40,7 @@ public class CoreHeatingSystem : MonoBehaviour
                     if (currentCoreHealth >= maxCoreHealth)
                     {
                         Debug.Log("die");
-                        Destroy(gameObject);
-                        LoadDeath();
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                     }
         }
         else if (currentCoreHealth >= 0.5f)
