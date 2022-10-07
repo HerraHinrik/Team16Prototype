@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3445096207068888233}
   - component: {fileID: 1683824272596126187}
   - component: {fileID: 4993711831879551789}
+  - component: {fileID: 8377766546076436239}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -76,6 +77,7 @@ MonoBehaviour:
   laserFlash: {fileID: 5119225497224694998}
   hitEffect: {fileID: 6874538022339746212, guid: 19b2d31bfa011164f85e3579332b9880, type: 3}
   lineRenderer: {fileID: 0}
+  shootingRotation: {fileID: 0}
 --- !u!114 &3445096207068888229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +142,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &8377766546076436239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63937481405989509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42983929beebf2c4d80ebd992d25a69a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 317422395999653990, guid: 34c8cb9ce5f2c064ba9306df468935ef, type: 3}
 --- !u!1 &3445096207143031048
 GameObject:
   m_ObjectHideFlags: 0
