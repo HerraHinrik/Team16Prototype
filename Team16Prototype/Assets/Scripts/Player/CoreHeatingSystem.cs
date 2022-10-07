@@ -1,17 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CoreHeatingSystem : MonoBehaviour
 {
-    [SerializeField]public bool playerMovement;
+    [SerializeField] public bool playerMovement;
     [SerializeField] private float maxCoreHealth;
     [SerializeField] private float currentCoreHealth;
     [SerializeField] private Image coreSlider;
-    
+
     private Renderer _renderUI;
     private Renderer _renderPlayerCore;
     public GameObject objUI;
@@ -31,6 +32,7 @@ public class CoreHeatingSystem : MonoBehaviour
         currentCoreHealth += damage;
         Debug.Log("biib");
     }
+
     private void Update()
     {
         if (playerMovement == true)
@@ -83,6 +85,7 @@ public class CoreHeatingSystem : MonoBehaviour
     {
         coreSlider.fillAmount = currentCoreHealth / maxCoreHealth;
     }
+   
 
     void LoadDeath()
     {

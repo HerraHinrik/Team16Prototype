@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="569dfcea-99e1-4f83-be08-a1395f9f602b" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CoreHeatingSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" />
@@ -21,6 +22,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/characterMovement.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerShooting.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerShooting.cs.meta" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Team16Prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Team16Prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/CoreHeatingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CoreHeatingSystem.cs" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +37,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/DeathScene.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerCollision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/PlayGame.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.services.analytics@4.1.0/Runtime/AnalyticsServiceInstance.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -96,8 +109,14 @@
       <workItem from="1664872736860" duration="3400000" />
       <workItem from="1664893377714" duration="10020000" />
       <workItem from="1665058977367" duration="255000" />
+<<<<<<< Updated upstream
       <workItem from="1665059275323" duration="5105000" />
       <workItem from="1665069705460" duration="537000" />
+=======
+      <workItem from="1665059275323" duration="5146000" />
+      <workItem from="1665078157029" duration="1843000" />
+      <workItem from="1665126512054" duration="2662000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
