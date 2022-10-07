@@ -49,7 +49,7 @@ public class CoreHeatingSystem : MonoBehaviour
         }
         else if (currentCoreHealth >= 0.5f)
         {
-            currentCoreHealth -= Time.deltaTime * 2;
+            currentCoreHealth -= Time.deltaTime * 1.35f;
             SetSlider();
         }
         else
